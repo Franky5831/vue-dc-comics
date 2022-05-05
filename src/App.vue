@@ -99,6 +99,11 @@ main{
     color: white;
     text-align: center;
   }
+
+  #blueBar{
+    background-color: #0282F9;
+    height: 200px;
+  }
 }
 </style>
 
