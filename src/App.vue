@@ -1,41 +1,8 @@
 <template>
   <div id="app">
-    <header>
-      <img src="./img/dc-logo.png" alt="">
-      <div id="optionsHeader">
-        <a href="#">
-          <h1>characters</h1>
-        </a>
-        <a href="#">
-          <h1>comics</h1>
-        </a>
-        <a href="#">
-          <h1>movies</h1>
-        </a>
-        <a href="#">
-          <h1>tv</h1>
-        </a>
-        <a href="#">
-          <h1>games</h1>
-        </a>
-        <a href="#">
-          <h1>collelctibles</h1>
-        </a>
-        <a href="#">
-          <h1>videos</h1>
-        </a>
-        <a href="#">
-          <h1>fans</h1>
-        </a>
-        <a href="#">
-          <h1>news</h1>
-        </a>
-        <a href="#">
-          <h1>shop</h1>
-        </a>
-      </div>
-    </header>
+
     <main>
+      <app-header />
       <div id="contentHere">
         <h1>Content goes here</h1>
       </div>
@@ -47,8 +14,25 @@
 </template>
 
 <script>
+import AppHeader from '.components/AppHeader.vue'
+
+export default{
+  name: 'App',
+  components:{
+    AppHeader,
+  },
+  data(){
+
+  },
+  methods:{
+
+  }
+}
 
 </script>
+<style lang="scss">
+
+</style>
 
 <style lang="scss">
 *{
@@ -103,6 +87,7 @@ main{
   #blueBar{
     background-color: #0282F9;
     height: 200px;
+    display: flex;
   }
 }
 </style>
