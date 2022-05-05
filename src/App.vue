@@ -1,4 +1,5 @@
 <template>
+
   <div id="app">
     <app-header />
     <main>
@@ -117,6 +118,25 @@ footer{
   #heroFooter{
     height: 500px;
     background-image: url('./assets/img/footer-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+  }
+  #links{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 300px;
+
+    ul li:first-child{
+      color: white;
+      font-size: 30px;
+    }
+    ul li{
+      list-style-type:none;
+      color: rgb(131, 131, 131);
+      font-size: 15px;
+    }
   }
 }
 </style>
