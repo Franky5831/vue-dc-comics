@@ -1,5 +1,4 @@
 <template>
-
   <div id="app">
     <app-header />
     <main>
