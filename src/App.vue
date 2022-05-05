@@ -1,25 +1,24 @@
 <template>
   <div id="app">
-
+    <app-header />
     <main>
-      <app-header />
       <div id="contentHere">
         <h1>Content goes here</h1>
       </div>
-      <div id="blueBar">
-        
-      </div>
+    <app-footer />
     </main>
   </div>
 </template>
 
 <script>
-import AppHeader from '.components/AppHeader.vue'
+import AppHeader from './components/AppHeader.vue'
+import AppFooter from './components/AppFooter.vue'
 
-export default{
+export default {
   name: 'App',
   components:{
     AppHeader,
+    AppFooter
   },
   data(){
 
@@ -84,10 +83,40 @@ main{
     text-align: center;
   }
 
+}
+
+
+
+
+footer{
+
   #blueBar{
     background-color: #0282F9;
-    height: 200px;
+    padding: 50px;
     display: flex;
+    justify-content: center;
+    gap: 4%;
+  }
+  a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+
+    img{
+      width: 60px;
+    }
+
+    h1{
+      color: white;
+      font-weight: 100;
+      font-size: 22px;
+    }
+  }
+
+  #heroFooter{
+    height: 500px;
+    background-image: url('./assets/img/footer-bg.jpg');
   }
 }
 </style>
