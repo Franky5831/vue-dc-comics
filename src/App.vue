@@ -1,23 +1,21 @@
 <template>
   <div id="app">
     <app-header />
-    <main>
-      <div id="contentHere">
-        <h1>Content goes here</h1>
-      </div>
+    <app-main />
     <app-footer />
-    </main>
   </div>
 </template>
 
 <script>
 import AppHeader from './components/AppHeader.vue'
+import AppMain from './components/AppMain.vue'
 import AppFooter from './components/AppFooter.vue'
 
 export default {
   name: 'App',
   components:{
     AppHeader,
+    AppMain,
     AppFooter
   },
   data(){
@@ -120,6 +118,8 @@ footer{
     background-repeat: no-repeat;
     background-size: cover;
     height: 300px;
+    padding: 0 10% 0 10%;
+
   }
   #links{
     display: flex;
@@ -137,6 +137,27 @@ footer{
       font-size: 15px;
     }
   }
+  #socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10% 0 10%;
+
+      #followUs{
+        display: flex;
+        flex-direction: row;
+        gap: 35px;
+      ul{
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      li{
+        list-style-type:none;
+      }
+    }
+  }
+  }
+
 }
 </style>
 
