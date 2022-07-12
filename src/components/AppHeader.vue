@@ -33,8 +33,6 @@
           <h1>shop</h1>
         </a>
       </div>
-
-      
     </header>
 </template>
 
